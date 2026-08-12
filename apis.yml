@@ -1,10 +1,20 @@
 aid: evozyne
 name: Evozyne
-description: 'Evozyne is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Evozyne is an AI-native protein therapeutics company founded in 2020
+  by Paragon Biosciences and headquartered in Chicago, Illinois. It combines generative
+  machine learning with directed evolution and high-throughput biology to design de
+  novo proteins — which it brands Natural Machines — and advance them as engineered
+  protein therapeutics for immune-mediated diseases. The platform pairs AI protein
+  design with wet-lab build-and-test cycles, and the company has collaborated with
+  NVIDIA on model work and with the Gates Foundation on sustainability applications.
+  Evozyne is a drug-discovery organization rather than a software vendor: it publishes
+  a corporate website, a pipeline page, scientific publications and news, but no public
+  API, developer portal, SDK or machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/evozyne/refs/heads/main/apis.yml
+image: https://evozyne.com/wp-content/themes/evozyne/markup/dist/images/logo.svg
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/evozyne_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +22,14 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Biotechnology
+- Life Sciences
+- Artificial Intelligence
+- Protein Design
+- Drug Discovery
+- Therapeutics
+- Immunology
+- Machine Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +37,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/evozyne-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/evozyne_stock/
+  url: https://evozyne.com/
+- type: GitHubOrganization
+  url: https://github.com/Evozyne
+- type: TermsOfService
+  url: https://evozyne.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://evozyne.com/privacy-policy/
+- type: News
+  url: https://evozyne.com/about-us/news/
+- type: Careers
+  url: https://evozyne.com/careers/
+- type: Contact
+  url: https://evozyne.com/contact-us/
+- type: Products
+  url: https://evozyne.com/platform/
+- type: Research
+  url: https://evozyne.com/platform/science/
+- type: About
+  url: https://evozyne.com/about-us/
+- type: LLMsTxt
+  url: llms/evozyne-llms.txt
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Evozyne is a clinical-stage protein therapeutics company whose product is a drug
+    pipeline rather than software, and evozyne.com is a WordPress marketing site where
+    /openapi.json, /graphql and every /.well-known/ path 404 while api., docs. and
+    developer.evozyne.com do not resolve in DNS at all.
+  evidence:
+  - url: https://evozyne.com/openapi.json
+    status: 404
+  - url: https://evozyne.com/graphql
+    status: 404
+  - url: https://evozyne.com/.well-known/agent-card.json
+    status: 404
+  - url: https://evozyne.com/llms.txt
+    status: 404
+  - url: https://evozyne.com/
+    status: 200
+  checked: '2026-08-12'

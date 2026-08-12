@@ -1,0 +1,32 @@
+generated: '2026-08-12'
+method: probed
+source: https://evozyne.com/
+note: >-
+  Every /.well-known/ path probed on the only host Evozyne operates (evozyne.com)
+  returned 404. No document was served, so NO WellKnown or SecurityTxt pointer is
+  emitted in apis.yml — this file records a verified absence, not a presence. The
+  404 bodies are the WordPress theme's own error page (text/html), not documents.
+  The api./docs./developer. subdomains do not resolve in DNS, so there was no
+  second host to probe.
+host: https://evozyne.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+hosts_not_resolving:
+- api.evozyne.com
+- docs.evozyne.com
+- developer.evozyne.com
+- app.evozyne.com
+- platform.evozyne.com

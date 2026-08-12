@@ -1,0 +1,43 @@
+# Evozyne
+
+> Evozyne is an AI-native protein therapeutics company founded in 2020 by Paragon Biosciences and headquartered in Chicago, Illinois. It pairs generative machine learning with directed evolution and high-throughput biology to design de novo proteins ("Natural Machines") and advance them as engineered protein therapeutics for immune-mediated diseases.
+
+## Status of the API surface
+
+Evozyne publishes **no public API, developer portal, SDK, webhook surface, or
+machine-readable specification**. Probed on 2026-08-12: `/openapi.json`,
+`/swagger.json`, `/api-docs`, `/docs`, `/graphql` and every `/.well-known/*`
+discovery path on evozyne.com returned 404; `api.evozyne.com`,
+`docs.evozyne.com` and `developer.evozyne.com` do not resolve in DNS. The only
+machine-readable endpoint on the domain is the default WordPress REST API at
+`https://evozyne.com/wp-json/` that serves the marketing site's own content — it
+is CMS plumbing, not an Evozyne product API, and is not catalogued as one.
+
+The public GitHub organization github.com/Evozyne holds six repositories, all of
+which are forks of third-party projects (PyYAML, NVIDIA NeMo, ecto_range,
+azure_ad_openid, jupyterlab-s3-browser, TRACR_RNA). No first-party client library
+is published on npm, PyPI, RubyGems or crates.io.
+
+## Company
+
+- [Evozyne](https://evozyne.com/): Company home.
+- [About us](https://evozyne.com/about-us/): Mission, origin, and leadership.
+- [Platform](https://evozyne.com/platform/): The AI protein design platform.
+- [AI Protein Design](https://evozyne.com/platform/ai-protein-design/): How generative models are applied to protein design.
+- [Science & Publications](https://evozyne.com/platform/science/): Peer-reviewed publications and scientific approach.
+- [Partnerships](https://evozyne.com/platform/partnerships/): Collaborations, including NVIDIA and the Gates Foundation.
+- [Pipeline](https://evozyne.com/pipeline/): Therapeutic programs in development.
+- [News](https://evozyne.com/about-us/news/): Company announcements.
+- [Careers](https://evozyne.com/careers/): Open roles.
+- [Contact](https://evozyne.com/contact-us/): Contact form.
+- [Terms of use](https://evozyne.com/terms-of-use/)
+- [Privacy Policy](https://evozyne.com/privacy-policy/)
+
+## Code
+
+- [GitHub organization](https://github.com/Evozyne): Six public repositories, all forks; no first-party SDK or API client.
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/evozyne/refs/heads/main/apis.yml): The machine-readable APIs.json profile for this company.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/evozyne/refs/heads/main/well-known/evozyne-well-known.yml): Recorded results of the discovery probe.
