@@ -11,6 +11,17 @@ description: 'Evozyne is an AI-native protein therapeutics company founded in 20
   a corporate website, a pipeline page, scientific publications and news, but no public
   API, developer portal, SDK or machine-readable specification of any kind.'
 url: https://raw.githubusercontent.com/api-evangelist/evozyne/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://evozyne.com/wp-content/themes/evozyne/markup/dist/images/logo.svg
 x-type: company
 x-source: harvest:secondary-market
